@@ -10,13 +10,22 @@ public static void main(String[] args) {
 // while loop that makes the finch move forward
 while(myFinch.getDistance() >=7){
     myFinch.setMove("F",15,100);
+}
     // 2nd whileloopif there is something infront of the finch it will turn left and move
-while(myFinch.getDistance() < 7){
-    myFinch.setMove("B",7,100);
-    myFinch.setTurn("L",90,50);
+// while(myFinch.getDistance() < 7){
+//     myFinch.setMove("B",7,100);
+//     myFinch.setTurn("L",90,50);
     
-}}
+// }
+myFinch.setMove("B",7,100);
+myFinch.setTurn("L",90,50);
 
+while(myFinch.getDistance() >= 7){
+    myFinch.setMove("F",30,100);
+}
+
+myFinch.setMove("B",7,100);
+myFinch.setTurn("L",90,50);
 
     myFinch.stopAll();
     myFinch.disconnect();
