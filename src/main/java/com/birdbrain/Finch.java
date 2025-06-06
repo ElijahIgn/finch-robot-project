@@ -369,4 +369,11 @@ public class Finch extends Robot {
         else if (upsideDown) return "Upside down";
         return "In between";
     }
+/**
+ * readjust() changes the direction of the finch and prepares it for a smooth move forward
+ */
+    public void readjust(){
+        myFinch.setMove("B",7,100);
+myFinch.setTurn("L",90,50);
+    }
 }

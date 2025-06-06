@@ -5,7 +5,7 @@ import com.birdbrain.Finch;
 public class Test{
 public static void main(String[] args) {
     Finch myFinch = new Finch();
-    myFinch.setMotors(-50,50);
+    myFinch.setMotors(50,50);
 
 // while loop that makes the finch move forward
 while(myFinch.getDistance() >=7){
